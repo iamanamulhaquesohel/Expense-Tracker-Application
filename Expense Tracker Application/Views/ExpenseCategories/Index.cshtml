@@ -1,0 +1,40 @@
+﻿@model IEnumerable<ExpenseCategory>
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container mb-2">
+    <div class="row mb-2">
+        <div class="col">
+            <div class="display-6">Expense Category Lists:</div>
+            <div class="d-flex justify-content-end mb-1">
+                <a asp-action="Create" asp-controller="ExpenseCategories"><i class="fa fa-plus-square-o btn btn-outline-success "></i></a>
+            </div>
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr class="text-center">
+                        <th>Expense Categories Name</th>
+                        <th>Update/Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var category in Model)
+                    {
+                        <tr class="text-center">
+                            <td>@category.CategoryName</td>
+                            
+                            <td classBranch"text-center">
+                                <a asp-action="Update" asp-controller="ExpenseCategories" asp-route-Id="@category.ExpenseCategoryId"><i class="fa fa-pencil-square-o btn btn-outline-success"></i></a>
+                                <a asp-action="Delete" asp-controller="ExpenseCategories" asp-route-Id="@category.ExpenseCategoryId"><i class="fa fa-trash-o btn btn-outline-danger"></i></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+@section styles {
+    <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/lib/Custom Design/main.css" rel="stylesheet" />
+}
+

@@ -1,0 +1,104 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker Application</title>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/lib/Custom Design/main.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        section {
+            background-image: url("~/images/bg-set.jpg");
+            background-image: url("./images/bg-set.jpg");
+            background-color: #cccccc;
+            height: 570px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .card {
+            margin-top: 90px;
+            box-shadow: 3px 2px 14px 13px rgba(0,0,0,0.27);
+            -webkit-box-shadow: 3px 2px 14px 13px rgba(0,0,0,0.27);
+            -moz-box-shadow: 3px 2px 14px 13px rgba(0,0,0,0.27);
+            font-size: 12px;
+        }
+
+        .card-body {
+            background-color: #fff;
+            color: black;
+        }
+
+        .card-1 {
+            margin-top: 200px;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+        i {
+            margin-right: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    @await Html.PartialAsync("_NavbarPartial")
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <div class="card card-1 ">
+                            <div class="card-body">
+                                <h2 class="card-title"><i class="fa fa-building-o"></i>Expense Tracker Application</h2>
+                                <p class="card-text text-center">Click the Button below to See details.</p>
+                                <a asp-action="Index" asp-controller="ExpenseCategorys" class="btn btn-outline-success"><i class="fa fa-list"></i>Go to Expense Category</a>
+                                <a asp-action="Index" asp-controller="DailyExpenses" class="btn btn-outline-success"><i class="fa fa-server"></i>Go to DailyExpense</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title"><i class="fa fa-file-code-o"></i>Expense Tracker</h2>
+                                <p class="card-text text-center">Feel your written code.</p>
+                                <p class="card-text text-center list-group-item-secondary"><i class="fa fa-bookmark"></i>Requirement Filled in Project</p>
+                                <ul class="list-group list-group-numbered">
+                                    <li class="list-group-item">ASP.NET Core MVC.</li>
+                                    <li class="list-group-item ">ASP.NET Core Framework 5.</li>
+                                    <li class="list-group-item">Entity Framwork Core.</li>
+                                    <li class="list-group-item ">Microsoft SQL Server.</li>
+                                    <li class="list-group-item">C# Programming Language.</li>
+                                    <li class="list-group-item ">Bootstrap 5.</li>
+                                    <li class="list-group-item">Code-First approach of System Development.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid">
+        <p class="text-center">&copy; @DateTime.Now.Year - Expense Tracker Application. &nbsp;&nbsp; Develop By: Anamul Haque Sohel. &nbsp;&nbsp; Contact: 01686-769805</p>
+    </div>
+</body>
+</html>
