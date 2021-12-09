@@ -1,9 +1,9 @@
 # Expense-Tracker-Application
 
 # Requirment
-1.Install node js
-2. Visual Studio Code 2019
-3. Install dotnet ef global tool using this command  "dotnet tool install --global dotnet-ef"
+1.Install node js.
+2. Visual Studio Code 2019.
+3. Install dotnet ef global tool using this command  "dotnet tool install --global dotnet-ef".
 
 # Installation guide or Watch the video to open project "How to.mp4"
 1. Download the repositories.
