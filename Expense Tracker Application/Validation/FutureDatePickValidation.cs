@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Expense_Tracker_Application.Validation
 {
-    public class FutureDatePickValidation: ValidationAttribute
+    public class FutureDatePickValidation:ValidationAttribute
     {
         //Custom validation override to prevent future date pick
         public override bool IsValid(object value)

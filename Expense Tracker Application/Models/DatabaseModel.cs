@@ -30,9 +30,9 @@ namespace Expense_Tracker_Application.Models
     public class DailyExpense 
     {
         public int DailyExpenseId { get; set; }
-        [Required, Column(TypeName = "date"), Display(Name = "Expense Date"), FutureDatePickValidation(ErrorMessage ="Date Can not be Future Date")]
+        [Required, Column(TypeName ="date"), FutureDatePickValidation(ErrorMessage ="Expense Date Can not be Future Date"), Display(Name = "Expense Date")]
         public DateTime ExpenseDate { get; set; }
-        [Required, Column(TypeName="money"), Display(Name = "Amount(TK)")]
+        [Required, Column(TypeName="money"), Display(Name ="Amount(TK)")]
         public decimal Amount { get; set; }
         //Foreign Key Set or Relation between ExpenseCategory to Daily Expense
         [Required, ForeignKey("ExpenseCategory"), Display(Name = "Categories Name")]

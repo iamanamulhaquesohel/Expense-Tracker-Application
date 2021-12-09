@@ -9125,11 +9125,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Document Data\\IDB\\Practices File\\Interview Preparation\\Excel Technologies Ltd\\Expense Tracker Application\\Expense Tracker Application\\Expense Tracker Application.csproj",
+      "projectUniqueName": "D:\\Document Data\\Github\\Expense-Tracker-Application\\Expense Tracker Application\\Expense Tracker Application.csproj",
       "projectName": "Expense Tracker Application",
-      "projectPath": "D:\\Document Data\\IDB\\Practices File\\Interview Preparation\\Excel Technologies Ltd\\Expense Tracker Application\\Expense Tracker Application\\Expense Tracker Application.csproj",
+      "projectPath": "D:\\Document Data\\Github\\Expense-Tracker-Application\\Expense Tracker Application\\Expense Tracker Application.csproj",
       "packagesPath": "C:\\Users\\Administrator$\\.nuget\\packages\\",
-      "outputPath": "D:\\Document Data\\IDB\\Practices File\\Interview Preparation\\Excel Technologies Ltd\\Expense Tracker Application\\Expense Tracker Application\\obj\\",
+      "outputPath": "D:\\Document Data\\Github\\Expense-Tracker-Application\\Expense Tracker Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
