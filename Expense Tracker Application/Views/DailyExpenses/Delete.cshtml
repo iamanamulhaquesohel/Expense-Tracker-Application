@@ -6,35 +6,27 @@
     <div class="row">
         <div class="col-12">
             <h3>Delete Expense:</h3>
-
-            <form method="post" asp-action="Delete" asp-controller="DailyExpenses" asp-route-DailyExpenseId="@Model.DailyExpenseId" id="FormAJ">
+            <form method="post" asp-action="Delete" asp-controller="DailyExpenses" asp-route-Id="@Model.DailyExpenseId" id="FormAJ">
                 <div class="form-group row mb-2">
                     <label asp-for="ExpenseDate" class="col-form-label col-form-label-sm col-2"></label>
                     <div class="col-4">
                         <input type="text" asp-for="@Model.ExpenseDate" class="form-control form-control-sm"  />
-                        
                     </div>
                 </div>
                 <div class="form-group row mb-2">
                     <label class="col-form-label col-form-label-sm col-2">Expense Catgory</label>
                     <div class="col-4">
-                      
                         <input type="text" asp-for="@Model.ExpenseCategory.CategoryName" class="form-control form-control-sm"/>
-                     
                     </div>
                 </div>
-
                 <div class="form-group row mb-2">
                     <label asp-for="Amount" class="col-form-label col-form-label-sm col-2"></label>
                     <div class="col-4">
                         <input type="text" asp-for="@Model.Amount" class="form-control form-control-sm"  />
-                        
                     </div>
                 </div>
-
                 <div class="form-group row mb-2">
                     <div class="col-4 offset-2">
-
                         <button type="submit" class="btn btn-success">Delete</button>
                     </div>
                 </div>
